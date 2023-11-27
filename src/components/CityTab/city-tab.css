@@ -1,0 +1,72 @@
+.city-tab-container {
+  position: fixed;
+  top: 2rem; left: 2rem; right: 2rem;
+  bottom: 0;
+  background-color: transparent;
+  backdrop-filter: blur(0.8rem);
+  border-radius: 2rem 2rem 0 0;
+  /* background-image: url('../../assets/images/kyiv.jpg'); */
+  
+  box-shadow: 
+    0 0 1rem rgba(0, 0, 0, 0.5);
+
+  transition: transform 0.4s;
+
+  &[isHidden="true"] {
+    transform: translateY(100dvh);
+
+    & .arrow-icon {
+      transform: scaleY(-1) translateY(5rem);
+    }
+  }
+
+  .switch-visibility-button {
+    display: grid;
+    justify-items: center;
+    height: 3rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    .arrow-icon {
+      height: 100%;
+      width: 2rem;
+      fill: rgb(255, 255, 255);
+    
+      transition: transform 0.4s;
+    }
+  }
+
+  .header {
+    font-size: 1.2rem;
+    padding: 2rem 5rem;
+    color: white;
+
+    .main {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+  }
+
+  .content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 70%;
+    padding: 2rem;
+    gap: 2rem;
+    color: white;
+
+    .test {
+      background-color: rgb(20, 20, 20);
+      border-radius: 2rem;
+      height: 100%;
+      width: 100%;
+      box-shadow: .3rem .3rem .6rem #090a10, 
+      -.2rem -.2rem .0rem transparent;
+      padding: 2rem;
+      box-sizing: border-box;
+      font-size: 1.1rem;
+    }
+  }
+}

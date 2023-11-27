@@ -1,0 +1,10 @@
+.leaflet-control-zoom,
+.leaflet-bottom.leaflet-right {
+  display: none;
+} 
+
+.leaflet-container {
+  height: 100dvh;
+  z-index: 0;
+  background-color: black !important;
+}
