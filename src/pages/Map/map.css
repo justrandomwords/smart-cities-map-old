@@ -8,3 +8,28 @@
   z-index: 0;
   background-color: black !important;
 }
+.leaflet-popup {
+  --popup-background-color: rgb(50, 50, 50);
+  --popup-font-color: white;
+
+  pointer-events: none;
+
+  .leaflet-popup-content-wrapper {
+    background-color: var(--popup-background-color);
+    color: var(--popup-font-color);
+
+    .leaflet-popup-content {
+      margin: 0.6rem 1.2rem;
+    }
+  }
+
+  .leaflet-popup-tip-container {
+    .leaflet-popup-tip {
+      background-color: var(--popup-background-color);
+    }
+  }
+
+  .leaflet-popup-close-button {
+    display: none;
+  }
+}

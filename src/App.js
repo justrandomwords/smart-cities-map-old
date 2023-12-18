@@ -1,5 +1,5 @@
 import './App.css';
-import CityTab from './components/CityTab/CityTab';
+import CityTab from './components/ui/CityTab/CityTab';
 import Map from './pages/Map/Map';
 
 export default function App() {
@@ -13,7 +13,6 @@ window.history.replaceState({}, '', newURL);
   function updateUrl() {
 
   }
-
 
   return (
     <div className="App">
